@@ -1,0 +1,27 @@
+
+% current dir in MATLAB session should be set to ribosome_example/
+% in which this file is located
+% (after launching matlab, navigate to the folder usind cd)
+
+% Code should run with this file unedited.
+
+% The parser (parse_file_paths.m) expects paths to be in the
+% following format: 'description_token - file_path/'
+
+
+% aligment
+aln = input_data/prof_SSU.msf
+% adjacency matrix
+adj_matrix = input_data/adj_matrix_2wdk.mat
+% pdb residues in adjacency matrix
+pdb_resid = input_data/prof_pdbres.mat
+% xls files with annotated functional sites
+small_subunit_fs = input_data/combined_sites_16S_small.xlsx
+
+% results folder - trace and z-scores will be saved here
+results = results/
+% where to find trace file
+trace_result = results/trace_result.ranks.mat
+% where to save figures 
+fig_small = visualization/
+
